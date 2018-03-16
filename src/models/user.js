@@ -9,7 +9,7 @@ const UserSchema = mongoose.Schema({
   password: { type: String, required: true },
   role: { type: String, default: roles.user },
   uuid: { type: String, default: uuid() },
-  createdAd: { type: Date, default: Date.now },
+  createdAt: { type: Date, default: Date.now },
 });
 
 module.exports = mongoose.model('user', UserSchema);
